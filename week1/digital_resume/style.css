@@ -186,7 +186,7 @@ main{
     width:35%;
     line-height: 30px;
     border:0;
-    outline:none !important;
+    outline:none;
     padding:10px;
     margin:2%;
     display:inline-block;
@@ -198,7 +198,7 @@ main{
     float: right;
     margin-right: 15%;
     border:0;
-    outline:none !important;
+    outline:none;
     padding:10px;
     background:#fff;
     font-size: 16px;
@@ -208,7 +208,7 @@ main{
     width:78%;
     margin-left: 47px;
     border:0;
-    outline:none !important;
+    outline:none;
     padding:10px 20px;
     background:#2ab0ff;
     font-size: 14px;

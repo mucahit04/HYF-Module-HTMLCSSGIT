@@ -80,16 +80,16 @@ main{
     font-family: fantasy;
     font-size: 15px;
 }
-#hr1{
+.hr1{
     margin-top: 120px;
     width:60%;
 }
-#hr2{
+.hr2{
     margin-top:150px;
     width:60%;
     margin-right:220px;
 }
-#hr3{
+.hr3{
     margin-top: 50px;
     width:60%;
     margin-right: 220px;

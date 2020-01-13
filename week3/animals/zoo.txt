@@ -1,3 +1,5 @@
 Lion
 Zebra
 Monkey
+Elephant
+Giraffe

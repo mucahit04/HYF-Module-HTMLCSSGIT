@@ -172,3 +172,43 @@ header {
 .slide .copyright {
   font-size: 0.8em;
 }
+
+.editorialNavigation {
+  background-color: #f3f3f3;
+  padding-bottom: 5%;
+}
+
+.editorialNavigation ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: left;
+  width: 98%;
+  margin: auto;
+}
+
+.editorialNavigation li {
+  box-sizing: border-box;
+  width: 23%;
+  line-height: 1.5em;
+  margin-right: 2%;
+}
+
+.editorialNavigation a {
+  text-decoration: none;
+}
+.editorialNavigation a:hover h3 {
+  text-decoration: underline;
+}
+
+.editorialNavigation .content h3 {
+  color: #01689b;
+  font-size: 1.5em;
+  padding-right: 2%;
+}
+.editorialNavigation .content p {
+  padding-right: 8%;
+  color: black;
+}

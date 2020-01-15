@@ -199,6 +199,7 @@ header {
 .editorialNavigation a {
   text-decoration: none;
 }
+
 .editorialNavigation a:hover h3 {
   text-decoration: underline;
 }
@@ -208,7 +209,110 @@ header {
   font-size: 1.5em;
   padding-right: 2%;
 }
+
 .editorialNavigation .content p {
   padding-right: 8%;
   color: black;
+}
+
+.brick-container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.brick-spotlight {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.brick-spotlight h2 {
+  width: 100%;
+}
+
+.brick-spotlight h3,
+brick-text {
+  justify-content: flex-start;
+}
+
+.brick-spotlight .brick {
+  width: 30%;
+  margin: 1%;
+}
+
+.brick-image img {
+  width: 100%;
+  position: relative;
+}
+
+.brick-spotlight a {
+  text-decoration: none;
+  color: #01689b;
+}
+
+.brick-spotlight a:hover h3 {
+  text-decoration: underline;
+  color: #014364;
+}
+
+.brick-text {
+  color: black;
+}
+
+.brick-nieuws {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 5%;
+  font-size: 1.1em;
+}
+
+.brick-nieuws h2 {
+  width: 100%;
+}
+
+.brick-nieuws h2,
+h3,
+brick-text {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.brick-nieuws .brick {
+  width: 27%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.brick-image img {
+  width: 100%;
+  position: relative;
+}
+
+.brick-nieuws a {
+  text-decoration: none;
+  color: #01689b;
+}
+
+.brick-nieuws a:hover h3 {
+  text-decoration: underline;
+  color: #014364;
+}
+.brick-nieuws a:hover .more {
+  text-decoration: underline;
+  color: #014364;
+}
+
+.brick-nieuws .brick-text {
+  font-size: 0.8em;
+}
+.publDate {
+  font-weight: bold;
 }

@@ -1,86 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Rijksoverheid.nl is de website van het Rijk met uitleg en nieuws over wet- en regelgeving van alle ministeries."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <title>Informatie van de Rijksoverheid | Rijksoverheid.nl</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <img
-          class="logo"
-          src="https://www.rijksoverheid.nl/binaries/content/gallery/rijksoverheid/channel-afbeeldingen/logos/logo-ro.svg"
-          alt="Rijksoverheid"
-        />
-      </div>
-      <div class="navbar">
-        <div class="home">
-          <a href="#home">Home</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Rijksoverheid.nl is de website van het Rijk met uitleg en nieuws over wet- en regelgeving van alle ministeries." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet" />
+  <title>Informatie van de Rijksoverheid | Rijksoverheid.nl</title>
+</head>
+
+<body>
+  <div id="mainwrapper">
+    <header>
+      <div class="logo">
+        <div class="wrapper">
+          <img
+            src="https://www.rijksoverheid.nl/binaries/content/gallery/rijksoverheid/channel-afbeeldingen/logos/logo-ro.svg"
+            alt="Rijksoverheid" />
         </div>
-        <ul class="topmenu">
-          <li class="actueel">
-            <a href="#actueel">Actueel</a>
-          </li>
-          <li class="onderwerpen">
-            <a href="#onderwerpen">Onderwerpen</a>
-          </li>
-          <li class="ministeries">
-            <a href="#ministeries">Ministeries</a>
-          </li>
-          <li class="regering">
-            <a href="#regering">Regering</a>
-          </li>
-          <li class="documenten">
-            <a href="#documenten">Documenten</a>
-          </li>
-          <li class="doe-mee">
-            <a href="#doe-mee">Doe mee</a>
-          </li>
-        </ul>
       </div>
-      <main>
-        <div class="top-read-section">
-          <div class="top-read-content">
-            <div class="top-read-links">
-              <h2>Veel bekeken</h2>
+    </header>
+    <!---- Navbar Section Begins---->
+    <div id="navBar">
+      <div class="wrapper">
+        <nav class="home">
+          <a href="/">Home</a>
+        </nav>
+        <nav class="mainNav">
+          <ul id="topMenu">
+            <li>
+              <a href="/actueel">Actueel</a>
+            </li>
+            <li>
+              <a href="/onderwerpen">Onderwerpen</a>
+            </li>
+            <li>
+              <a href="/ministeries">Ministeries</a>
+            </li>
+            <li>
+              <a href="/regering">Regering</a>
+            </li>
+            <li>
+              <a href="/documenten">Documenten</a>
+            </li>
+            <li>
+              <a href="/doe-mee">Doe mee</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="searchForm" role="search" class="searchForm" data-search-closed="Open het zoekveld"
+          data-search-opened="Zoeken">
+          <form action=" ">
+            <input type="text" id="search-keyword" class="searchInput" title="Type hier uw zoektermen"
+              placeholder="Zoeken" />
+            <button id="search-submit" type="submit"><i class="fa fa-search" title="Start het zoeken"></i></button>
+          </form>
+        </div>
+        <a href="" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!--------   End of Navbar section   -------->
+    <main>
+      <div class="headerImage">
+        <div class="wrapper">
+          <div class="topTaskNavigation">
+            <h2>Veel bekeken</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  Veranderingen in 2020</a>
+              </li>
+              <li>
+                <a href="#" class=" ">
+                  Arbeidscontracten en ontslag: wat verandert er door de WAB?</a>
+              </li>
+              <li>
+                <a href="#" class=" ">
+                  Hoogte transitievergoeding vanaf 2020</a>
+              </li>
+              <li>
+                <a href="#">
+                  Overzicht schoolvakanties 2019-2020</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide">
+          <p class="copyright">
+            <span>&copy;</span>
+            Hollandse Hoogte</p>
+        </div>
+      </div>
+      <!----- End of top read section(header image etc.) ----->
+      <div class="editorialNavigation grey">
+        <div class="wrapper">
+          <nav>
+            <div class="fourItems">
               <ul>
-                <li><a href="#">Veranderingen in 2020</a></li>
-                <li>
+                <li class="navItem">
                   <a href="#">
-                    Wet arbeidsmarkt in balans (WAB): wat er verandert vanaf 1
-                    januari 2020</a
-                  >
+                    <div class="content">
+                      <h3>Belastingen, uitkeringen en toeslagen</h3>
+                      <p>Bijstand, AOW, WW-uitkering, Inkomstenbelasting, Wajong ...</p>
+                    </div>
+                  </a>
                 </li>
-                <li><a href="#">Overzicht schoolvakanties 2019-2020</a></li>
-                <li>
-                  <a href="#"
-                    >Kabinet: stikstofneerslag beperken en natuur versterken</a
-                  >
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Bouwen en wonen</h3>
+                      <p>Huurwoning, Huurverhoging, Koopwoning, Energielabel, Bouwregelgeving...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Economie</h3>
+                      <p>Ondernemen en innovatie, Overheidsfinanciën, Duurzame economie, Zelfstandigen zonder personeel
+                        ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Familie, zorg en gezondheid</h3>
+                      <p>Zorgverzekering, Zorg en ondersteuning thuis, Trouwen, samenlevingscontract en geregistreerd
+                        partnerschap ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Internationale samenwerking</h3>
+                      <p>Europese Unie, Brexit, Mensenrechten, Handelsverdragen EU ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Klimaat, milieu en natuur</h3>
+                      <p>Gaswinning in Groningen, Klimaatakkoord, Duurzame energie, Dierenwelzijn ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Migratie en reizen</h3>
+                      <p>Paspoort en identiteitskaart, Nederlandse nationaliteit, Reizen met kinderen ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Onderwijs</h3>
+                      <p>Schoolvakanties, Eindexamens, Hoger onderwijs, Basisonderwijs, Werken in het onderwijs ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Overheid en democratie</h3>
+                      <p>Privacy en persoonsgegevens, Gemeenten, Provincies, Koninklijk Huis ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Recht, veiligheid en defensie</h3>
+                      <p>Identiteitsfraude, Terrorismebestrijding, Ouderlijk gezag en voogdij ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Verkeer en vervoer</h3>
+                      <p>Rijbewijs, Verkeersregels, Openbaar vervoer, Verkeersveiligheid, Bijzondere voertuigen ...</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="navItem">
+                  <a href="#">
+                    <div class="content">
+                      <h3>Werk</h3>
+                      <p>Zelfstandigen zonder personeel (zzp), Minimumloon, Ouderschapsverlof, Werktijden, Ontslag ...
+                      </p>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </div>
-            <p class="copyright">
-              <span>©</span>
-              Hollandse Hoogte
-            </p>
-          </div>
-          <img
-            src="https://www.rijksoverheid.nl/binaries/large/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/hardlopers-in-actie-in-haarlem.jpg"
-            alt=""
-          />
+          </nav>
         </div>
-      </main>
-    </div>
-  </body>
+      </div>
+      <!----- End of editoryalNavigation section ----->
+      <div class="wrapper">
+        <div class="fullWidthSection">
+          <section class="brickRow spotLight">
+            <h2>
+              Uitgelicht</h2>
+            <div class="brick">
+
+              <a href="#" class="">
+                <h3>Deadline aanmelding fixusopleidingen</h3>
+                <div class="brick-image">
+                  <img
+                    src="/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2020/hoger_onderwijs_uitgelicht.jpg"
+                    alt="" />
+
+                </div>
+                <div class="brick-text">
+                  <p>
+                    Woensdag 15 januari 2020 is de&nbsp;deadline&nbsp;voor fixusopleidingen in hoger onderwijs voor het
+                    schooljaar 2020-2021.</p>
+                </div>
+              </a>
+            </div>
+            <div class="brick">
+
+              <a href="#" class=" ">
+                <h3>Advies over stoppen met roken</h3>
+                <div class="brick-image">
+                  <img src="/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2020/ikstopnu.jpg"
+                    alt="" />
+
+                </div>
+                <div class="brick-text">
+                  <p>
+                    Op Ikstopnu.nl&nbsp;krijgen stoppers &eacute;n gestopten gratis advies over hoe zij van het roken
+                    kunnen afkomen en welke vergoedingen er zijn.</p>
+                </div>
+              </a>
+            </div>
+            <div class="brick">
+
+              <a href="#" class="">
+                <h3>Fiets van de zaak</h3>
+                <div class="brick-image">
+                  <img
+                    src="/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2019/electrisch_fietsen_1920x1280.jpg"
+                    alt="" />
+
+                </div>
+                <div class="brick-text">
+                  <p>
+                    Sinds 1 januari 2020&nbsp;is het voor werkgevers makkelijker om hun werknemers te laten profiteren
+                    van
+                    een fiets van de zaak.&nbsp;</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="brickRow nieuws">
+            <h2>
+              Nieuws</h2>
+
+            <div class="brick">
+              <a href="#">
+                <h3>
+
+                  Ambassadeurs komen ‘thuis’ voor jaarlijkse conferentie</h3>
+                <div class="brick-text">
+                  <p>
+                    <span class="publDate">15-01-2020 | 11:35</span>
+                  </p>
+                  <p>Van dinsdag 28 tot en met vrijdag 31 januari zijn de Nederlandse topdiplomaten in het land voor de
+                    jaarlijkse ...</p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="brick">
+              <a href="#">
+                <h3>
+
+                  Eerste sociale huurwoning bestuursakkoord opgeleverd</h3>
+                <div class="brick-text">
+                  <p>
+                    <span class="publDate">15-01-2020 | 09:10</span>
+                  </p>
+                  <p>Minister Raymond Knops heeft woensdag 14 januari 2010 bij Nieuw-Amsterdam de oplevering van een
+                    eerste sociale huurwoning ...</p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="brick">
+              <a href="#">
+                <h3>
+
+                  Van Nieuwenhuizen: Nederland opnieuw inrichten tegen weersextremen</h3>
+                <div class="brick-text">
+                  <p>
+                    <span class="publDate">15-01-2020 | 08:00</span>
+                  </p>
+                  <p>Om Nederland robuust te maken tegen extreem weer, zoals piekbuien en langdurige droogte, moet er
+                    komende jaren extra worden ...</p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="brick">
+              <a href="#">
+                <h3>
+
+                  Ministerie van Buitenlandse Zaken op Wijs-op-Reis-plein</h3>
+                <div class="brick-text">
+                  <p>
+                    <span class="publDate">15-01-2020 | 07:32</span>
+                  </p>
+                  <p>Ook dit jaar neemt het ministerie van Buitenlandse Zaken weer deel aan de jaarlijkse Vakantiebeurs
+                    in
+                    de Jaarbeurs in Utrecht. ...</p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="brick">
+              <a href="#">
+                <h3>
+
+                  Adviescollege Stikstofproblematiek overhandigt luchtvaartrapport aan kabinet</h3>
+                <div class="brick-text">
+                  <p>
+                    <span class="publDate">14-01-2020 | 23:53</span>
+                  </p>
+                  <p>Het Adviescollege Stikstofproblematiek heeft vandaag haar advies over de luchtvaartsector in
+                    relatie
+                    tot de stikstofproblematiek ...</p>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="brick">
+              <a href="#">
+                <h3>
+
+                  Nederlandse Paviljoen EXPO 2020 Dubai heeft er een sponsor bij</h3>
+                <div class="brick-text">
+                  <p>
+                    <span class="publDate">14-01-2020 | 15:46</span>
+                  </p>
+                  <p>Shell heeft zich vandaag als sponsor verbonden aan het Nederlandse paviljoen op de Expo 2020 in
+                    Dubai. Shell zal in het paviljoen ...</p>
+                </div>
+              </a>
+            </div>
+            <a class="more" href="#">Meer nieuws</a>
+          </section>
+        </div>
+        <!-- two banner section begins-->
+        <div class="banner-container">
+          <a href="#">
+            <p class="banner1">Vragen?</p>
+            <p class="banner2">Bel Informatie</p>
+            <p class="banner3">Rijksoverheid:</p>
+            <p class="banner4">1400</p>
+          </a>
+        </div>
+        <div class="banner-container">
+          <a href="#">
+            <p class="banner5">Meld u aan voor de</p>
+            <p class="banner6">Nieuwsbrief</p>
+            <p class="banner7">Regeringsnieuws</p>
+          </a>
+        </div>
+      </div>
+    </main>
+    <!-- End of main-->
+    <footer>
+      <div class="wrapper">
+        <div class="payoff">
+          <span>De Rijksoverheid. Voor Nederland</span>
+        </div>
+
+        <div class="column">
+          <h2>Service</h2>
+          <ul>
+
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/abonneren">Abonneren</a>
+            </li>
+            <li>
+              <a href="/rss">RSS</a>
+            </li>
+            <li>
+              <a href="/vacatures">Vacatures</a>
+            </li>
+            <li>
+              <a href="/sitemap">Sitemap</a>
+            </li>
+            <li>
+              <a href="/help">Help</a>
+            </li>
+            <li>
+              <a href="/archief">Archief</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Over deze site</h2>
+          <ul>
+
+            <li>
+              <a href="/over-rijksoverheid-nl">Over Rijksoverheid.nl</a>
+            </li>
+            <li>
+              <a href="/wetten-en-regelingen">Wetten en regelingen</a>
+            </li>
+            <li>
+              <a href="/copyright">Copyright</a>
+            </li>
+            <li>
+              <a href="/privacy">Privacy</a>
+            </li>
+            <li>
+              <a href="/cookies">Cookies</a>
+            </li>
+            <li>
+              <a href="/toegankelijkheid">Toegankelijkheid</a>
+            </li>
+            <li>
+              <a href="/opendata">Open data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="languages">
+        <div class="wrapper">
+          <ul>
+            <li class=selected>
+              Nederlands</li>
+            <li>
+              <a href="#" lang="en">English</a>
+            </li>
+            <li>
+              <a href="#" lang="pap">Papiamento</a>
+            </li>
+            <li>
+              <a href="#" lang="pap">Papiamentu</a>
+            </li>
+            <li>
+              <a href="#">Nederlandse
+                Gebarentaal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

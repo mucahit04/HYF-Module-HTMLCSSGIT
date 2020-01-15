@@ -3,3 +3,153 @@ body {
     padding: 0px;
     font-family: "Ropa Sans", Calibri, sans-serif;
 }
+
+header {
+    background-color: #fff;
+    text-align: center;
+}
+
+.logo .wrapper {
+    margin-left: 20.6%;
+}
+
+.navBar .wrapper {
+    background-color: #01689b;
+    color: #ffffff;
+    border: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navBar .home {
+
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 50px;
+    line-height: 1.4rem;
+    align-items: center;
+}
+
+.navBar .mainNav {
+    padding-right: 4%;
+}
+
+.navBar .wrapper .topMenu {
+    list-style-type: none;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navBar a:hover {
+    text-decoration: underline;
+}
+
+.navBar a.icon {
+    display: none;
+}
+
+.navBar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.navBar li {
+    width: auto;
+    font-size: 1.2em;
+    padding: 0 10px 0 10px;
+}
+
+.headerImage {
+    background-image: url("https://www.rijksoverheid.nl/binaries/large/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/hardlopers-in-actie-in-haarlem.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 320px;
+    position: relative;
+    padding: 2%;
+}
+
+.headerImage .topTaskNavigation {
+    width: 30%;
+    margin: 2%;
+    background-color: #fff;
+    padding: 2%;
+    justify-content: center;
+}
+
+.topTaskNavigation ul {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.topTaskNavigation a {
+    text-decoration: none;
+    color: #01689b;
+}
+
+.topTaskNavigation a:hover {
+    text-decoration: underline;
+    color: #014364;
+}
+
+.topTaskNavigation li {
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+.topTaskNavigation ul li:before {
+    content: '';
+    position: absolute;
+    border-right: 2px solid #01689b;
+    border-bottom: 2px solid #01689b;
+    width: 5px;
+    height: 5px;
+    left: 7%;
+    margin-top: 10px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.headerImage h2 {
+    margin: 0px;
+    margin-left: 5%;
+}
+
+
+.searchForm {
+    position: absolute;
+    width: 25%;
+    top: 40%;
+    right: 10%;
+    z-index: 1;
+
+}
+
+.searchForm input {
+    width: 83%;
+    border: none;
+    font-size: 0.9rem;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+.searchForm button {
+    width: 15%;
+    padding: 10px;
+    margin-left: 0px;
+    border: 1px black;
+    background: black;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-left: none;
+
+}

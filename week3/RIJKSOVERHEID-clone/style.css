@@ -1,6 +1,9 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: "RO Sans", Calibri, sans-serif;
 }
 
@@ -107,12 +110,16 @@ header {
   color: #fff;
 }
 
+.navBar .mobile-icon {
+  display: none;
+}
+
 .headerImage {
   background-image: url("https://www.rijksoverheid.nl/binaries/large/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/hardlopers-in-actie-in-haarlem.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 280px;
+  min-height: 280px;
   position: relative;
   padding: 1%;
   padding-bottom: 4%;
@@ -175,16 +182,18 @@ header {
 .editorialNavigation {
   background-color: #f3f3f3;
   padding-bottom: 5%;
+  width: 100%;
 }
 
 .editorialNavigation ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  overflow: hidden;
+  justify-content: center;
   align-items: flex-start;
   text-align: left;
-  width: 95%;
+  width: 100%;
   margin: auto;
   padding-top: 3%;
 }
@@ -467,4 +476,167 @@ footer {
 ul .selected {
   border: none;
   font-weight: bolder;
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 650px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .navBar {
+    max-width: auto;
+    margin: auto;
+    background-color: #01689b;
+    color: white;
+  }
+  .navBar .wrapper .home {
+    margin-left: 1%;
+  }
+  .logo .wrapper {
+    margin-left: 30%;
+  }
+  .logo .wrapper img {
+    width: 300px;
+    height: 100px;
+    margin-top: -5%;
+  }
+  .navBar .wrapper {
+    height: auto;
+    min-height: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .navBar a.icon:hover {
+    background-color: #01689b;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .topMenu {
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+  }
+  .mainNav {
+    display: none;
+  }
+  .navBar .wrapper:hover .mainNav {
+    width: 100%;
+    display: flex;
+    order: 3;
+  }
+  .navBar .wrapper:hover .mainNav ul {
+    width: 85%;
+    margin-left: 5%;
+    padding: 0;
+    text-align: left;
+  }
+  .navBar .wrapper:hover .mainNav li {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    font-size: 0.1em;
+  }
+  .searchForm {
+    width: 100%;
+    order: 2;
+    margin-left: 8%;
+    position: relative;
+    margin-bottom: 5px;
+  }
+  .searchForm input {
+    width: 85%;
+  }
+  .searchForm button {
+    width: 10%;
+    margin: 0;
+  }
+  .navBar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .navBar a.icon {
+    background: #01689b;
+    display: inline;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .navBar a.icon:hover {
+    float: right;
+  }
+  .headerImage {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .headerImage .topTaskNavigation {
+    width: 95%;
+    height: auto;
+    margin-top: 5%;
+    font-size: 0.9em;
+  }
+  .headerImage .topTaskNavigation li {
+    line-height: 1.8em;
+    font-weight: bolder;
+  }
+  .editorialNavigation {
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .fourItems ul {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+  }
+  .fourItems ul .content {
+    width: 100%;
+    padding: 2%;
+    justify-content: left;
+  }
+  .fourItems ul {
+    list-style-type: none;
+  }
+  .fourItems ul li {
+    text-align: left;
+    width: 80%;
+    margin: 0;
+    line-height: 1em;
+  }
+  .fourItems ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .brick-spotlight {
+    width: 100;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+  .brick-spotlight .brick {
+    width: 45%;
+  }
+  .brick-nieuws {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .brick-nieuws .brick {
+    width: 45%;
+  }
 }

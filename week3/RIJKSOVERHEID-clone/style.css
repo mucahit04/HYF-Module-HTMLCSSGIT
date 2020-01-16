@@ -478,13 +478,15 @@ ul .selected {
   font-weight: bolder;
 }
 
-/* Mobile Version */
+/* ------------------- Mobile Version ---------------------- */
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 480px) {
   body {
     width: 100%;
-    padding: 0;
+    height: 100%;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   .navBar {
     max-width: auto;
@@ -550,7 +552,7 @@ ul .selected {
     margin-bottom: 5px;
   }
   .searchForm input {
-    width: 85%;
+    width: 75%;
   }
   .searchForm button {
     width: 10%;
@@ -587,11 +589,18 @@ ul .selected {
     line-height: 1.8em;
     font-weight: bolder;
   }
+  .topTaskNavigation ul li:before {
+    left: 8%;
+    margin-top: 12px;
+  }
   .editorialNavigation {
     width: 100%;
     height: auto;
     font-size: 1em;
-    line-height: 1em;
+  }
+  .editorialNavigation h3,
+  .content {
+    line-height: 1.1em;
   }
   .fourItems ul {
     width: 100%;
@@ -627,7 +636,7 @@ ul .selected {
     justify-content: space-between;
   }
   .brick-spotlight .brick {
-    width: 45%;
+    width: 95%;
   }
   .brick-nieuws {
     width: 100%;
@@ -637,14 +646,64 @@ ul .selected {
     justify-content: space-between;
   }
   .brick-nieuws .brick {
-    width: 45%;
+    width: 90%;
   }
   .brick-nieuws .more:before {
     left: 5%;
   }
   .banner-container {
-    width: 45%;
-    font-size: 0.8em;
+    width: 95%;
+    margin: auto;
+    font-size: 3.5vw;
     line-height: 0.6em;
+    margin-bottom: 10%;
+  }
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .footer-container {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 3%;
+  }
+  .footer-container .payoff {
+    width: 100%;
+    font-style: normal;
+    font-size: 1.4em;
+  }
+  .column {
+    width: 45%;
+  }
+  .column h2 {
+    margin-left: 0%;
+  }
+  .languages ul {
+    list-style-type: none;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 10px 10px 10px;
+    line-height: 2em;
+  }
+  .languages li {
+    border: 1px solid #b2d7ee;
+    width: auto;
+    text-align: center;
+    font-size: 1em;
+    padding: 1%;
+    margin-top: 5%;
+  }
+  ul .selected {
+    border: none;
+    font-weight: bolder;
   }
 }

@@ -639,4 +639,12 @@ ul .selected {
   .brick-nieuws .brick {
     width: 45%;
   }
+  .brick-nieuws .more:before {
+    left: 5%;
+  }
+  .banner-container {
+    width: 45%;
+    font-size: 0.8em;
+    line-height: 0.6em;
+  }
 }

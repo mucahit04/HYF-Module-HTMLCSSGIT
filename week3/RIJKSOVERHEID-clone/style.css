@@ -112,11 +112,10 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
   height: 280px;
   position: relative;
   padding: 1%;
-  padding-bottom: 3%;
+  padding-bottom: 4%;
 }
 
 .headerImage .topTaskNavigation {
@@ -216,6 +215,11 @@ header {
   color: black;
 }
 
+hr {
+  border-top: 1px solid #b4b1b1;
+  border-bottom: 1px solid #fff;
+}
+
 .brick-container {
   width: 90%;
   margin: auto;
@@ -307,7 +311,7 @@ brick-text {
   color: #014364;
 }
 
-.brick-nieuws a:hover .more {
+.brick-nieuws a:hover {
   text-decoration: underline;
   color: #014364;
 }
@@ -319,7 +323,7 @@ brick-text {
   border-bottom: 2px solid #01689b;
   width: 5px;
   height: 5px;
-  left: 4%;
+  left: 6%;
   margin-top: 10px;
   transform: translateY(-50%) rotate(-45deg);
 }
@@ -332,10 +336,15 @@ brick-text {
   font-weight: bold;
 }
 
+.brick-nieuws .more {
+  width: 95%;
+  margin: auto;
+}
+
 .banner-container {
-  width: 30%;
+  width: 32%;
   height: 230px;
-  border: 3px solid #e2e1e1;
+  border: 4px solid #cbd2e3;
   float: left;
   display: flex;
   text-decoration: none;
@@ -375,6 +384,87 @@ brick-text {
   font-size: 2.2em;
   font-weight: bolder;
 }
+
 .banner6 {
   margin-top: 20%;
+}
+
+footer {
+  background-color: #01689b;
+  margin-top: 5%;
+  padding-top: 5%;
+  margin-bottom: 3%;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.payoff {
+  width: 50%;
+  margin: auto;
+  color: white;
+  font-family: "RO Serif";
+  font-style: italic;
+  font-size: 2em;
+  float: left;
+}
+
+.column {
+  width: 20%;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.column ul {
+  list-style-type: none;
+  line-height: 1.8em;
+  margin-left: -13%;
+}
+
+.column a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.languages {
+  width: 100%;
+  background-color: #fff;
+}
+
+.languages ul {
+  list-style-type: none;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 10px 10px 10px;
+}
+
+.languages li {
+  border: 1px solid #b2d7ee;
+  width: auto;
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5%;
+}
+
+.languages li a {
+  text-decoration: none;
+  color: #01689b;
+}
+
+ul .selected {
+  border: none;
+  font-weight: bolder;
 }

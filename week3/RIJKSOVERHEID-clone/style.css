@@ -707,3 +707,213 @@ ul .selected {
     font-weight: bolder;
   }
 }
+
+/* ------------------- Tablet Version ---------------------- */
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .navBar {
+    max-width: auto;
+    margin: auto;
+    background-color: #01689b;
+    color: white;
+  }
+  .navBar .wrapper .home {
+    margin-left: 1%;
+  }
+  .logo .wrapper {
+    margin-left: 30%;
+  }
+  .logo .wrapper img {
+    width: 300px;
+    height: 100px;
+    margin-top: -5%;
+  }
+  .navBar .wrapper {
+    background-color: #01689b;
+    color: #ffffff;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navBar .home {
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin: 1%;
+    width: 100%;
+    line-height: 1.4rem;
+  }
+  .navBar .mainNav {
+    width: 100;
+    align-items: left;
+  }
+  .navBar .wrapper .topMenu {
+    list-style-type: none;
+  }
+  .navBar a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .navBar a.icon {
+    display: none;
+  }
+  .navBar ul {
+    width: 100;
+  }
+  .navBar li {
+    width: auto;
+    font-size: 1.1em;
+  }
+  .searchForm {
+    width: 100%;
+    order: 2;
+    margin-left: 8%;
+    position: relative;
+    margin-bottom: 5px;
+  }
+  .searchForm input {
+    width: 75%;
+  }
+  .searchForm button {
+    width: 10%;
+    margin: 0;
+  }
+  .headerImage {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .headerImage .topTaskNavigation {
+    width: 95%;
+    height: auto;
+    margin-top: 5%;
+    font-size: 0.9em;
+  }
+  .headerImage .topTaskNavigation li {
+    line-height: 1.8em;
+    font-weight: bolder;
+  }
+  .topTaskNavigation ul li:before {
+    left: 8%;
+    margin-top: 12px;
+  }
+  .editorialNavigation {
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+  }
+  .editorialNavigation h3,
+  .content {
+    line-height: 1.1em;
+  }
+  .fourItems ul {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+  }
+  .fourItems ul .content {
+    width: 100%;
+    padding: 2%;
+    justify-content: left;
+  }
+  .fourItems ul {
+    list-style-type: none;
+  }
+  .fourItems ul li {
+    text-align: left;
+    width: 80%;
+    margin: 0;
+    line-height: 1em;
+  }
+  .fourItems ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .brick-spotlight {
+    width: 100;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+  .brick-spotlight .brick {
+    width: 95%;
+  }
+  .brick-nieuws {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .brick-nieuws .brick {
+    width: 90%;
+  }
+  .brick-nieuws .more:before {
+    left: 5%;
+  }
+  .banner-container {
+    width: 95%;
+    margin: auto;
+    font-size: 3.5vw;
+    line-height: 0.6em;
+    margin-bottom: 10%;
+  }
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .footer-container {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 3%;
+  }
+  .footer-container .payoff {
+    width: 100%;
+    font-style: normal;
+    font-size: 1.4em;
+  }
+  .column {
+    width: 45%;
+  }
+  .column h2 {
+    margin-left: 0%;
+  }
+  .languages ul {
+    list-style-type: none;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 10px 10px 10px;
+    line-height: 2em;
+  }
+  .languages li {
+    border: 1px solid #b2d7ee;
+    width: auto;
+    text-align: center;
+    font-size: 1em;
+    padding: 1%;
+    margin-top: 5%;
+  }
+  ul .selected {
+    border: none;
+    font-weight: bolder;
+  }
+}

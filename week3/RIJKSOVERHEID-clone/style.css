@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@ header {
   background-color: #01689b;
   color: #ffffff;
   width: 100%;
-  min-height: 70px;
+  min-height: 80px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -35,7 +36,7 @@ header {
 }
 
 .navBar .mainNav {
-  padding-right: 4%;
+  padding-right: 3%;
 }
 
 .navBar .wrapper .topMenu {
@@ -737,40 +738,43 @@ ul .selected {
     margin-top: -5%;
   }
   .navBar .wrapper {
-    background-color: #01689b;
-    color: #ffffff;
-    width: 100%;
-    min-height: 70px;
+    height: auto;
+    min-height: 120px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
-  .navBar .home {
-    font-size: 1.4rem;
-    text-decoration: none;
-    margin: 1%;
-    width: 100%;
-    line-height: 1.4rem;
+  .navBar a.icon:hover {
+    background-color: #01689b;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  .navBar .mainNav {
-    width: 100;
-    align-items: left;
+  .topMenu {
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
   }
-  .navBar .wrapper .topMenu {
-    list-style-type: none;
-  }
-  .navBar a {
-    text-decoration: none;
-    color: #fff;
-  }
-  .navBar a.icon {
+  .mainNav {
     display: none;
   }
-  .navBar ul {
-    width: 100;
+  .navBar .wrapper:hover .mainNav {
+    width: 100%;
+    display: flex;
+    order: 3;
   }
-  .navBar li {
-    width: auto;
-    font-size: 1.1em;
+  .navBar .wrapper:hover .mainNav ul {
+    width: 85%;
+    margin-left: 5%;
+    padding: 0;
+    text-align: left;
+  }
+  .navBar .wrapper:hover .mainNav li {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    font-size: 0.1em;
   }
   .searchForm {
     width: 100%;
@@ -780,11 +784,28 @@ ul .selected {
     margin-bottom: 5px;
   }
   .searchForm input {
-    width: 75%;
+    width: 85%;
   }
   .searchForm button {
     width: 10%;
     margin: 0;
+  }
+  .navBar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .navBar a.icon {
+    background: #01689b;
+    display: inline;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .navBar a.icon:hover {
+    float: right;
   }
   .headerImage {
     width: 100%;
@@ -801,7 +822,7 @@ ul .selected {
     font-weight: bolder;
   }
   .topTaskNavigation ul li:before {
-    left: 8%;
+    left: 7%;
     margin-top: 12px;
   }
   .editorialNavigation {
@@ -809,9 +830,13 @@ ul .selected {
     height: auto;
     font-size: 1em;
   }
-  .editorialNavigation h3,
-  .content {
+  .fourItems {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     line-height: 1.1em;
+    font-size: 0.9em;
   }
   .fourItems ul {
     width: 100%;
@@ -820,6 +845,7 @@ ul .selected {
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
+    text-align: left;
   }
   .fourItems ul .content {
     width: 100%;
@@ -830,10 +856,8 @@ ul .selected {
     list-style-type: none;
   }
   .fourItems ul li {
-    text-align: left;
-    width: 80%;
-    margin: 0;
-    line-height: 1em;
+    width: 98%;
+    line-height: 1.2em;
   }
   .fourItems ul li a {
     text-decoration: none;
@@ -844,28 +868,27 @@ ul .selected {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    justify-content: space-between;
+    font-size: 1.1em;
   }
   .brick-spotlight .brick {
-    width: 95%;
+    width: 45%;
   }
   .brick-nieuws {
     width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .brick-nieuws .brick {
-    width: 90%;
+    width: 45%;
   }
   .brick-nieuws .more:before {
-    left: 5%;
+    display: none;
   }
   .banner-container {
-    width: 95%;
-    margin: auto;
-    font-size: 3.5vw;
+    width: 45%;
+    margin-right: 5%;
+    font-size: 2vw;
     line-height: 0.6em;
     margin-bottom: 10%;
   }
